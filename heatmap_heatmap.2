@@ -2,3 +2,5 @@
 2. col <- colorRampPalette(brewer.pal(10, "RdYlBu"))(256)
    heatmap(my_matrix, scale = "row", col=col)
    
+   Heatmap(my_matrix, clustering_method_rows = "average", clustering_method_columns = "average", 
+           name = c("Normalized fold", fontface = 1), col = colorRamp2(c(-0.01, 0.24, 1), c("blue", "white", "red")), show_row_dend = FALSE)
