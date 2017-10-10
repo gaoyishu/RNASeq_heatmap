@@ -1,0 +1,4 @@
+k4 <- as,matrix(data[  ,c(2,3)])
+rownames(k4) <- data[,1]
+k4
+pheatmap(log2(k4+1), cellwidth = 50, cellheight = 50, cluster_rows = FALSE, cluster_cols = FALSE,fontsize = 13, border_color=NA)
